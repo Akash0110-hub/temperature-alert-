@@ -1,12 +1,9 @@
-# Simple Interest Calculator
+P = float(input("Enter Principal: "))
+R = float(input("Enter Rate of Interest: "))
+T = float(input("Enter Time (years): "))
 
-# Input values
-P = float(input("Enter the Principal amount: "))
-R = float(input("Enter the Rate of Interest: "))
-T = float(input("Enter the Time (in years): "))
+A = P * (1 + R/100) ** T
+CI = A - P
 
-#calculate the interset
-SI = (P*T*R)/100
-
-# Display result
-print("The Simple Interest is:", SI)
+print("Compound Interest =", CI)
+print("Total Amount =", A)
